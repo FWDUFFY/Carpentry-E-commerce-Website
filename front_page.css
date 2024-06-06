@@ -1,0 +1,338 @@
+/* General format styles */
+*:hover { 
+    outline:1px blue solid;
+  } 
+
+html {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f6f1ea;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+body {
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+/* ____________________________________________ */
+/* Header  */
+
+
+header {
+    top: 0;
+    left: 0;
+    z-index: 3;
+    position: fixed;
+    background-color: transparent;
+    height: 150px;
+    width: 100vh;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.header-logo img {
+    max-width: 100px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    transition: width 0.8s ease;
+}
+
+.header-title {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    line-height: 1.5rem;
+}
+
+header a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    transition: font-size 0.8s ease;
+}
+
+header .slogan {
+    font-size: 1rem;
+    color: black;
+    transition: font-size 0.8s ease;
+}
+
+
+
+/* First container */
+
+.first-tab {
+    background-image: url('Forest Photo Square.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    transition: background-image 0.5s ease;
+}
+
+    /* Nav Elements in first tab */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    align-self: center;
+    justify-self: center;
+    margin: 2rem 0rem 0rem 0rem;
+}
+
+nav li {
+    margin: 0;
+}
+
+
+.buy-link, .commission-link, .collaborate-link ,.buy-link:visited, .commission-link:visited, .collaborate-link:visited {
+    font-size: 7rem;
+    text-decoration: none;
+    color: #FBFBD7;
+}
+
+    /* Format <li> elements for hover event */
+.buy-link:hover,.commission-link:hover, .collaborate-link:hover {
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+}
+
+.buy-link::before, .commission-link::before, .collaborate-link::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FBFBD7;
+    transition: width 0.5s ease;
+}
+
+.buy-link:hover::before,.commission-link:hover::before, .collaborate-link:hover:before {
+    width: 100%; /* Expand the underline the full width on hover */
+}
+
+/* ____________________________________________ */
+
+/* Second tab */
+.second-tab {
+    background-color:#FBFBD7;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.second-tab img {
+    height: 100%;
+    margin-left: 0rem;
+}
+
+.second-tab p {
+    text-align: flex-start;
+    justify-self: center;
+    color: #b8a31c;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-left: 2rem;
+    max-width: 50%;
+}
+
+/* ____________________________________________ */
+
+/* Third tab */
+.third-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.third-tab-title {
+    text-decoration: underline;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.third-tab-photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.third-tab-container-1, .third-tab-container-2, .third-tab-container-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    width: 30%;
+}
+
+.third-tab img {
+    width: 100%;
+    transition: 0.5 ease-in-out
+}
+
+.photo-tag {
+    text-align: center;
+}
+
+
+
+
+/* Make images with the "photo-front" class appear above the others */
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 80vh;
+    width: 100%;
+    background-color: #fff4a4 ;
+    margin: 0;
+    padding: .2rem 1rem;
+    position: sticky;
+}
+
+
+.footer-content {  
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin: .5rem;
+    margin-top: 6rem;
+}
+
+footer p{
+    font-size: 1rem;
+}
+
+/* About section */
+
+footer .about {
+    width: 33.3%;
+    justify-self: center;
+} 
+
+/* Find us section */
+footer .find-us{
+    width:33.3%;
+}
+
+
+.instagram img {
+    max-width: 100px;
+    height: auto; 
+}
+
+.email-link {
+    text-decoration: underline 0.2px;
+    color: black;
+}
+
+/* Newsletter section */
+
+footer .newsletter {
+    width:33.3%;
+}
+
+/* Formatting input boxes */
+
+.newsletter input[type="text"] {
+    width: 40%;
+}
+
+.newsletter input[type="text"], .newsletter input[type="email"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 3rem;
+}
+
+.newsletter input[type="text"]:focus, .newsletter input[type="email"]:focus {
+    border-color: dark gray;
+    outline: none;
+}
+
+.newsletter input[type="email"], .newsletter input[type="submit"] {
+    width: 80%;
+}
+
+
+/* Placeholder text */
+.newsletter input[type="text"]::placeholder, .newsletter input[type="email"]::placeholder  {
+    color: rgb(145, 141, 141); /* Set placeholder text color to light gray */
+    font-family: "Cormorant Garamond", serif;
+}
+
+
+/* Submit button */
+
+button[type="submit"] {
+    font-size: 1rem;
+    font-family: "Cormorant Garamond", serif;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 3rem;
+    width: 40%;
+}
+
+
+
+
+
+
+

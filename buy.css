@@ -1,0 +1,194 @@
+*:hover { 
+    outline:1px blue solid;
+  } 
+
+html{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f6f1ea;
+    height: 100%;
+    display: inline-flex;
+}
+/* ____________________________________________ */
+/* Header  */
+
+
+header {
+    top: 0;
+    left: 0;
+    z-index: 3;
+    position: fixed;
+    background-color: transparent;
+    height: 150px;
+    width: 100vh;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.header-logo img {
+    max-width: 100px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    transition: width 0.8s ease;
+}
+
+.header-title {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    line-height: 1.5rem;
+}
+
+header a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    transition: font-size 0.8s ease;
+}
+
+header .slogan {
+    font-size: 1rem;
+    color: black;
+    transition: font-size 0.8s ease;
+}
+
+
+
+/* Body section of webpage */
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: solid red;
+    position: relative;
+}
+
+
+/* Arranging content within the body section */
+
+main {
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    margin-left: 20rem;
+ 
+}
+
+
+/* Left hand navigation panel */
+nav {
+    display: flex;
+    min-width: 12rem;
+    max-width: 20%;
+    margin-top: 10rem;
+    position: fixed;
+}
+
+nav .contents {
+}
+
+nav ul {
+    margin-top: 1rem;
+    margin-left: 0rem;
+    list-style-type: none;
+}
+
+nav li{
+    margin-bottom: 0.75rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* photo section */
+.photo-page {
+    display:grid;
+    grid-template-columns: repeat(3,1fr) ;
+    gap: 20px;
+
+    width: 100%;
+    max-width: none;
+    margin-top: 1000px;
+}
+
+.item-cont {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    width: 200px;
+    margin: 0 30px;
+
+}
+
+.item-cont h1{
+    margin-bottom: .1rem;
+    padding-bottom: .1rem;padding-bottom: .1rem;
+    font-size: 1.4rem;
+
+}
+
+.item-cont h4 {
+    margin-bottom: .1rem;
+    padding-bottom: .1rem;
+
+}
+
+.item-cont h6 {
+    margin-bottom: .1rem;
+    padding-bottom: .1rem;
+    
+}
+
+.item-cont img{
+    width: 100%;
+    height: auto;
+    display: block;
+    align-self: left;
+    
+    /* Creating animation for product images */
+    
+    animation-name: fadeInOut, moveLeft300px, bounce;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+
+}
+
+/* Footer */
+footer {
+    display: flex;
+    max-height: 300px;
+    width: 100%;
+    background-color: #fff4a4 ;
+    margin: 0;
+    padding-top: .2rem;
+    padding-left: 1rem;
+    padding-right: auto;
+    padding-bottom: auto;
+    border: solid red;
+    
+}
+
+footer .about, footer .find-us{
+    width: 50%;
+    height: 100%;
+    flex-grow: 1;
+}

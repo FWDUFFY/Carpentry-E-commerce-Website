@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External link to font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Link to CSS and JS files -->
+    <link href = "front_page.css" rel = "stylesheet">
+    <script src = "script.js" defer></script>
+    <title>Bird on The Buddha Joinery</title>
+</head>
+<header>
+    <div class = "header-logo">
+        <img src = "logo_trans.png" alt = "logo">
+    </div>
+    <div class = "header-title">
+        <ul>
+            <li><a class = "title" href = "front_page.html">Bird on the Buddha Joinery</a></li>
+            <li><p class = "slogan"> Simple things made beautifully</p></li>
+        </ul>
+    </div>    
+</header>
+    
+<body>
+    <main>
+        
+        
+        <div class = "first-tab">
+            <nav>
+                <ul>
+                    <li><a class = "buy-link" href = "buy.html">Buy</a></li>
+                    <li><a class = "commission-link" href = "commission.html">Commission</a></li>
+                    <li><a class = "collaborate-link" href = "collaborate.html">Collaborate</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class = "second-tab">
+            <img src = "mike bowl face.jpg"> 
+            <p>"From the heart of the forest, each piece whispers a tale,
+                Handcrafted with reverence, like a delicate sail.
+                Revealing the wisdom of trees, their secrets unfurl,
+                In every carved curve, in every graceful swirl." </p>
+        </div>
+        
+             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+            <div class = "third-tab">
+                <div class = "third-tab-title">
+                    <h1> Latest</h1>
+                </div>
+                <div class = "third-tab-photos">
+                    <div class = "third-tab-container-1">
+                            <img class = "imageFront" src = "Latest Container Images\Apprentice\Image-front.jpg" style = "display: block"/>
+                            <img class = "imageLeft" src = "Latest Container Images\Apprentice\Image-left.jpg" style = "display: none"/>
+                            <img class = "imageCenter" src = "Latest Container Images\Apprentice\Image-center.jpg" style = "display: none"/>
+                            <img class = "imageRight" src = "Latest Container Images\Apprentice\Image-right.jpg" style = "display: none"/>
+                            <p class = "photo-tag">The latest graduate from our apprenticeship program, Fin.</p>
+                    </div>
+                    
+                    <div class = "third-tab-container-2">
+                        <img class = "imageFront" src = "Latest Container Images\Make Holt\imageFront.png" style = "display: block">
+                        <img class = "imageLeft" src = "Latest Container Images\Make Holt\imageLeft.png" style = "display: none">
+                        <img class = "imageCenter" src = "Latest Container Images\Make Holt\imageCentre.png" style = "display: none">
+                        <img class = "imageRight" src = "Latest Container Images\Make Holt\imageRight.png" style = "display: none">
+                        <p class = "latest-photo-tag">Find our products in store at Make Holt, Norwich.</p>
+                    </div>
+
+                    <div class = "third-tab-container-3">
+                        <img class = "imageFront" src = "Latest Container Images\Projects\Photo-front.jpg" style = "display: block">
+                        <img class = "imageLeft" src = "Latest Container Images\Projects\Photo-left.jpg" style = "display: none">
+                        <img class = "imageCenter" src = "Latest Container Images\Projects\Photo-center.jpg" style = "display: none">
+                        <img class = "imageRight" src = "Latest Container Images\Projects\Photo-right.jpg" style = "display: none">
+                        <p class = "latest-photo-tag">Latest projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>    
+</body>
+
+<footer>
+    
+    <div class = "about">
+        <div class = "footer-content">
+        <h2>About</h2>
+            <p> We here at Bird on the Buddah Joinery are passionate about creating beautiful 
+                pieces using sustainablly sourced wood that are joined with excellent craftsmenship 
+                and will last a lifetime.
+            </p>
+        </div>
+    </div>
+    <div class = "find-us">
+        <div class = "footer-content">
+            <h2>Find Us</h2>
+            <p>Mike Balshaw <br />
+                Point House, 25 Station Street <br />
+                Swaffham <br />
+                PE37 7HP <br />
+                +44 (0)1760 33650 <br />
+                <a class = "email-link" href="mailto:mike.balshaw@gmail.com">mike.balshaw@gmail.com</a>
+            </p>
+            <a class = "instagram" href = "https://www.instagram.com/birdonthebuddha?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target = "_blank"><img src= "insta_link_trans.png"></a>
+        </div>
+    </div>
+    <div class = "newsletter">
+        <div class = "footer-content">
+            <h2>Newsletter</h2>
+            <p>Stay up to date with our latest products and find inspiration in our recent commissions.</p> 
+            <!-- Sign up form -->
+            <form action = "subscribe.php" method="POST">
+                <div class = "input-1">
+                <input id = "firstName" name = "firstName" placeholder = "First Name" type = "text" required maxlength = "50">
+                <input id = "lastName" name = "lastName" placeholder = "Last Name" type = "text" required maxlength = "50">
+                <br>
+                </div>
+                <input id = "emailAddress" name = "emailAddress" placeholder = "Email Address" type = "email" required maxlength = "50">
+                <br>
+                <button type = "submit" value = "Subscribe">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+</html>

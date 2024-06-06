@@ -1,0 +1,35 @@
+html {
+    z-index: -1;
+}
+
+footer {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color: #fff4a4 ;
+    margin: 0;
+    padding-top: .2rem;
+    padding-left: 1rem;
+    padding-right: auto;
+    padding-bottom: auto;
+    border: solid red;
+    position: relative;
+    z-index: 1;
+}
+
+footer .about, footer .find-us{
+    width: 50%;
+    height: 100%;
+    flex-grow: 1;
+}
+
+
+.instagram img {
+    max-width: 100px;
+    height: auto; 
+}
+
+.email-link {
+    text-decoration: none;
+    color: black;
+}

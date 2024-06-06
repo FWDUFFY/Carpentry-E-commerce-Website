@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link href = "commission.css" rel = "stylesheet">
+    <title>Document</title>
+</head>
+
+<header>
+    <div class = "header-logo">
+        <img src = "logo_trans.png" alt = "logo">
+    </div>
+    <div class = "header-title">
+        <ul>
+            <li><a class = "title" href = "front_page.html">Bird on the Buddha Joinery</a></li>
+            <li><p class = "slogan"> Simple things made beautifully</p></li>
+        </ul>
+    </div>    
+</header>
+    
+<body>
+    <div class="contact-form">
+        <div class="brief">
+            <h1>Get in touch</h1>
+            <p>We pride ourselves on offering bespoke furniture, using locally sourced wood. It all starts with a brief. Please complete the form, and we'll be in touch as soon as we can.</p>
+        </div>
+        <div class="form">
+            <form action="send_email.php" method = "post">
+                <div class="name-boxes">
+                    <div class="firstName">
+                        <label for="firstName">First Name (required)</label>
+                        <input id="firstName" name="firstName" type="text" required>
+                    </div>
+                    <div class="lastName">
+                        <label for="lastName">Last Name (required)</label>
+                        <input id="lastName" name="lastName" type="text" required>
+                    </div>
+                </div>
+                <div class="emailAddress">
+                    <label for="emailAddress">Email Address (required)</label>
+                    <input id="emailAddress" name="emailAddress" type="email" required>
+                </div>
+                <div class="message">
+                    <label for="message">Message (required)</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="attachment">
+                    <label for="file-upload" class="custom-file-upload">File Attachment (not required)</label>
+                    <input type="file" id="file-upload">
+                </div>
+                <div class="button">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+</html>
